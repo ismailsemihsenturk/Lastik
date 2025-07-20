@@ -20,7 +20,7 @@ import numpy as np
 import copy
 
 # ==============================================================================
-# 1. "LASTİK GENOM VERİTABANI": SİZİN TARAFINIZDAN DEŞİFRE EDİLEN NİHAİ HARİTA
+# 1. ""LASTIK Genome Database": The final map deciphered by me.
 # ==============================================================================
 SHAPE_DATABASE = {
     # --- Single combination ---
