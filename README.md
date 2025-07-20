@@ -1,4 +1,4 @@
-````markdown
+
 <div align="center">
   <h1>Project: Lastik</h1>
   <h2>The Lost Geometry of Matrix Multiplication</h2>
@@ -6,9 +6,11 @@
 </div>
 
 <div align="center">
-  [English](#english-version) • [Türkçe](#türkçe-versiyon)
+  <a href="#english-version">English</a> • <a href="#türkçe-versiyon">Türkçe</a>
 </div>
+<br>
 
+<a name="english-version"></a>
 ## English Version
 
 > "This is a path from frequencies to topology, from there to matrices, and from there to computation."
@@ -32,6 +34,12 @@ This project was not born from a single formula, but from a multi-stage journey 
 * Amazingly, this set of graphical rules perfectly replicated the algebraic results of standard matrix multiplication. This crucial validation proved that the geometric intuition was sound and paved the way for the next great challenge: applying this new visual language to the complexities of Strassen's algorithm.
 
 **The Giant: Applying Strassen's Algorithm** The next step was to see if this graphical method could be accelerated. This led to applying Strassen's algorithm, attempting to translate its 7 intermediate products (M1 to M7) into the graphical "Lastik" notation.
+  * A direct translation of Strassen's seven products into this graphical language required a crucial evolution of the "Lastik" concept. Strassen's genius wasn't just in finding seven multiplications; it was in the clever pre-addition and subtraction of matrix elements to form the terms to be multiplied.
+    To represent these algebraic sums and differences, such as (a+d) or (f-h), the concept of charge was introduced to the Lastik notation. Each component of the Lastik (a, b, c, d) could now exist in one of three states:
+    - Positive Charge (+): The component is active, like a "peak."
+    - Negative Charge (-): The component is active with an opposite sign, like a "trough."
+    - Neutral (0): The component exists within the structure but is considered "inactive" for the current operation.
+  * This allowed me to represent complex molecular structures within a single Lastik figure. For example, the term (c-a) could now be visualized as a single "A" Lastik where the 'c' path is activated with a + charge and the 'a' node is simultaneously activated with a - charge. This principle of charge is precisely how Strassen tuned his terms, creating the initial     "soup of artifacts" where products like +ah and -ah could coexist, setting the stage for their eventual, elegant annihilation.
 
 **The Leap: Penrose Diagrams & Tensors** The attempt to formalize the "Lastik" notation led to the discovery of Penrose Diagrams. This was a critical leap, revealing that my intuitive "Lastik" was an attempt to understand the world of Tensors. The project's scope expanded: I was no longer just drawing graphs; I was exploring tensor contractions.
 
@@ -50,21 +58,21 @@ This project was not born from a single formula, but from a multi-stage journey 
 
 ### Visuals: Milestones of the Journey
 **Initial Whiteboard Sketches:**
-![](img/strassen-lastik-first.png)
-![](img/strassen-lastik-q-p.png)
-![](img/lastik-alphabet.png)
-![](img/penrose-lastik.png)
-![](img/penrose-lastik-products.png)
+![first](img/strassen-lastik-first.png)
+![q-p](img/strassen-lastik-q-p.png)
+![alphabet](img/lastik-alphabet.png)
+![penrose-lastik](img/penrose-lastik.png)
+![lastik-products](img/penrose-lastik-products.png)
 
 **Interactive Lab Screenshot:**
-![](img/lastik-lab.png)
-![](img/lissajous-lab.png)
+![lastik-lab](img/lastik-lab.png)
+![lissajous-lab](img/lissajous-lab.png)
 
 **Final Engine Analysis Scene (P, Q, R, S):**
-![](img/p.png)
-![](img/q.png)
-![](img/r.png)
-![](img/s.png)
+![p](img/p.png)
+![q](img/q.png)
+![r](img/r.png)
+![s](img/s.png)
 
 ### How to Run
 
@@ -85,7 +93,7 @@ This project is not an end, but a beginning. The tasks ahead are:
 
 <br>
 
-
+<a name="türkçe-versiyon"></a>
 ## Türkçe Versiyon
 
 > "Frekanslardan topolojiye, oradan matrislere, oradan da hesaplamaya giden bir yol bu."
@@ -109,6 +117,12 @@ Bu proje, tek bir formülden değil, çok aşamalı bir keşif yolculuğundan do
 * Şaşırtıcı bir şekilde, bu grafiksel kurallar bütünü, standart matris çarpımının cebirsel sonuçlarını birebir kopyaladı. Bu hayati doğrulama, geometrik sezginin sağlam olduğunu kanıtladı ve bir sonraki büyük meydan okumaya, bu yeni görsel dili Strassen'in karmaşık yapısına uygulamaya zemin hazırladı.
 
 **Devle Karşılaşma: Strassen Algoritmasının Uygulanması** Bir sonraki adım, bu grafiksel yöntemin hızlandırılıp hızlandırılamayacağını görmekti. Bu, beni Strassen'in algoritmasına ve onun 7 ara çarpımını (M1'den M7'ye) "Lastik" notasyonuna çevirme çabasına yönlendirdi.
+  * Strassen'in yedi çarpımını doğrudan bu grafiksel dile çevirmek, "Lastik" konseptinde hayati bir evrimi gerektirdi. Strassen'in dehası, sadece yedi çarpım bulmasında değil; asıl sihri, çarpılacak terimleri oluşturmak için matris elemanlarını akıllıca önceden toplayıp çıkarmasındaydı.
+    (a+d) veya (f-h) gibi bu cebirsel toplamları ve farkları geometrik olarak temsil edebilmek için, Lastik notasyonuna yük kavramı dahil edildi. Artık Lastik'in her bir bileşeni (a, b, c, d), üç durumdan birinde var olabiliyordu:
+    - Pozitif Yük (+): Bileşen aktiftir, bir "tepe" gibidir.
+    - Negatif Yük (-): Bileşen zıt işaretle aktiftir, bir "çukur" gibidir.
+    - Nötr (0): Bileşen yapının bir parçasıdır, ancak o anki işlem için "etkisiz" kabul edilir.
+ * Bu, tek bir Lastik figürü içinde karmaşık moleküler yapılar oluşturmamı sağladı. Örneğin, (c-a) terimi, artık, 'c' yolunun + yükle ve aynı anda 'a' düğümünün - yükle aktive edildiği tek bir "A" Lastiği olarak görselleştirilebiliyordu. Strassen'in terimlerini akıllıca ayarlamasının sırrı tam olarak bu yük prensibidir. Bu ilke, +ah ve -ah gibi parçacıkların          bir arada var olabildiği o ilk "artıklar çorbasını" yaratarak, onların en sonunda gerçekleşecek olan o zarif "iptal" anına zemin hazırladı.
 
 **Sıçrama: Penrose Diyagramları ve Tensörler** "Lastik" notasyonunu formelleştirme girişimi, Penrose Diyagramları'nın keşfiyle sonuçlandı. Bu, sezgisel "Lastik" metaforumun aslında Tensörler dünyasını anlama çabası olduğunu ortaya çıkaran kritik bir sıçramaydı. Projenin kapsamı genişledi: artık sadece graf çizmiyordum; tensör kontraksiyonlarını araştırıyordum.
 
@@ -127,21 +141,21 @@ Bu proje, tek bir formülden değil, çok aşamalı bir keşif yolculuğundan do
 
 ### Görseller: Yolculuğun Kilometre Taşları
 **İlk Beyaz Tahta Çizimleri:**
-![](img/strassen-lastik-first.png)
-![](img/strassen-lastik-q-p.png)
-![](img/lastik-alphabet.png)
-![](img/penrose-lastik.png)
-![](img/penrose-lastik-products.png)
+![first](img/strassen-lastik-first.png)
+![q-p](img/strassen-lastik-q-p.png)
+![alphabet](img/lastik-alphabet.png)
+![penrose-lastik](img/penrose-lastik.png)
+![lastik-products](img/penrose-lastik-products.png)
 
 **Laboratuvarların Ekran Görüntüleri**
-![](img/lastik-lab.png)
-![](img/lissajous-lab.png)
+![lastik-lab](img/lastik-lab.png)
+![lissajous-lab](img/lissajous-lab.png)
 
 **Sonuçlar (P, Q, R, S):**
-![](img/p.png)
-![](img/q.png)
-![](img/r.png)
-![](img/s.png)
+![p](img/p.png)
+![q](img/q.png)
+![r](img/r.png)
+![s](img/s.png)
 
 
 
@@ -161,4 +175,4 @@ Bu, bir son değil, bir başlangıçtır. Önümüzdeki görevler şunlardır:
 1.  **Örüntü Arama:** Üretilen P, Q, R, S sahnelerini dikkatle inceleyerek, Strassen'in algoritmasındaki gizli simetrileri ve desenleri aramak.
 2.  **Optimizasyon:** Bu desenlerden yola çıkarak, "Bu savaşı daha az kayıpla (daha az çarpımla) kazanmanın bir yolu var mı?" sorusuna cevap aramak. 7 M terimi yerine, belki de 6 ara ürünle aynı sonucu veren yeni bir "Çarpışma Fiziği" tasarlamak.
 3.  **Genişleme:** Bu motoru ve felsefeyi, 3x3 ve nxn matrislere uygulayacak şekilde genelleştirmek.
-````
+
