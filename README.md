@@ -6,9 +6,11 @@
 </div>
 
 <div align="center">
-  [English](#english-version) • [Türkçe](#türkçe-versiyon)
+  <a href="#english-version">English</a> • <a href="#türkçe-versiyon">Türkçe</a>
 </div>
+<br>
 
+<a name="english-version"></a>
 ## English Version
 
 > "This is a path from frequencies to topology, from there to matrices, and from there to computation."
@@ -85,7 +87,7 @@ This project is not an end, but a beginning. The tasks ahead are:
 
 <br>
 
-
+<a name="türkçe-versiyon"></a>
 ## Türkçe Versiyon
 
 > "Frekanslardan topolojiye, oradan matrislere, oradan da hesaplamaya giden bir yol bu."
