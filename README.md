@@ -102,7 +102,7 @@ This project is not an end, but a beginning. The tasks ahead are:
 
 Bu proje, teorik bilgisayar biliminin en meşhur problemlerinden biri olan matris çarpımının optimizasyonunu, tamamen yeni ve sezgisel bir yaklaşımla ele alır. Strassen'in 1969'da matris çarpımını $O(n³)$ karmaşıklığının altına indiren devrimsel algoritmasını temel alarak, bu cebirsel adımları görsel ve geometrik bir dile tercüme etmeyi hedefler.
 
-Projenin kalbinde, "Lastik" adını verdiğimiz, matrisleri ve onların operasyonlarını temsil etmek için geliştirilmiş özgün bir görsel notasyon yatar. Bu notasyon, matematiksel olarak Lissajous eğrilerinin zengin ve zarif geometrisine dayanır.
+Projenin kalbinde, "Lastik" adını verdiğim, matrisleri ve onların operasyonlarını temsil etmek için geliştirilmiş özgün bir görsel notasyon yatar. Bu notasyon, matematiksel olarak Lissajous eğrilerinin zengin ve zarif geometrisine dayanır.
 
 Bu depo, Strassen algoritmasının her bir adımını ("artıklar çorbası"nın oluşumu, zıt yüklü terimlerin birbirini iptal etmesi ve nihai sonucun doğuşu), bu "Lastik" dilinde, adım adım görselleştiren bir Python motoru içerir. Asıl hedef, önce Strassen algoritmasını bu yeni dilde ifade edebilmektir. Nihai hedef ise, bu görsel analizler aracılığıyla Strassen'in algoritmasındaki gizli örüntüleri keşfetmek ve belki de onu aşacak yeni, daha verimli bir "Çarpışma Geometrisi" tasarlamaktır.
 
