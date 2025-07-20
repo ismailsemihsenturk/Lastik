@@ -1,4 +1,4 @@
-````markdown
+
 <div align="center">
   <h1>Project: Lastik</h1>
   <h2>The Lost Geometry of Matrix Multiplication</h2>
@@ -50,21 +50,21 @@ This project was not born from a single formula, but from a multi-stage journey 
 
 ### Visuals: Milestones of the Journey
 **Initial Whiteboard Sketches:**
-![](img/strassen-lastik-first.png)
-![](img/strassen-lastik-q-p.png)
-![](img/lastik-alphabet.png)
-![](img/penrose-lastik.png)
-![](img/penrose-lastik-products.png)
+![first](img/strassen-lastik-first.png)
+![q-p](img/strassen-lastik-q-p.png)
+![alphabet](img/lastik-alphabet.png)
+![penrose-lastik](img/penrose-lastik.png)
+![lastik-products](img/penrose-lastik-products.png)
 
 **Interactive Lab Screenshot:**
-![](img/lastik-lab.png)
-![](img/lissajous-lab.png)
+![lastik-lab](img/lastik-lab.png)
+![lissajous-lab](img/lissajous-lab.png)
 
 **Final Engine Analysis Scene (P, Q, R, S):**
-![](img/p.png)
-![](img/q.png)
-![](img/r.png)
-![](img/s.png)
+![p](img/p.png)
+![q](img/q.png)
+![r](img/r.png)
+![s](img/s.png)
 
 ### How to Run
 
@@ -127,21 +127,21 @@ Bu proje, tek bir formülden değil, çok aşamalı bir keşif yolculuğundan do
 
 ### Görseller: Yolculuğun Kilometre Taşları
 **İlk Beyaz Tahta Çizimleri:**
-![](img/strassen-lastik-first.png)
-![](img/strassen-lastik-q-p.png)
-![](img/lastik-alphabet.png)
-![](img/penrose-lastik.png)
-![](img/penrose-lastik-products.png)
+![first](img/strassen-lastik-first.png)
+![q-p](img/strassen-lastik-q-p.png)
+![alphabet](img/lastik-alphabet.png)
+![penrose-lastik](img/penrose-lastik.png)
+![lastik-products](img/penrose-lastik-products.png)
 
 **Laboratuvarların Ekran Görüntüleri**
-![](img/lastik-lab.png)
-![](img/lissajous-lab.png)
+![lastik-lab](img/lastik-lab.png)
+![lissajous-lab](img/lissajous-lab.png)
 
 **Sonuçlar (P, Q, R, S):**
-![](img/p.png)
-![](img/q.png)
-![](img/r.png)
-![](img/s.png)
+![p](img/p.png)
+![q](img/q.png)
+![r](img/r.png)
+![s](img/s.png)
 
 
 
