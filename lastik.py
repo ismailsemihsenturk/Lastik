@@ -99,7 +99,7 @@ def flip_signs(molekul):
 # ==============================================================================
 # 3. Visual World: Smart and Regular Drawing Engine
 # ==============================================================================
-class LissajousMotoru:
+class LissajousEngine:
     def __init__(self, ax): self.ax = ax
     def _get_recipe(self, shape_id): return SHAPE_DATABASE.get(shape_id)
     def _ciz_tek_atom(self, atom, center, scale=1.0, color='darkorange'):
@@ -152,9 +152,9 @@ def visualize_P():
     sonuc, iptal = cancel(soup)
     # Visualize
     fig=plt.figure(figsize=(18,12)); fig.suptitle("Analysis scene: P = M1+M4-M5+M7", fontsize=20)
-    LissajousMotoru(fig.add_subplot(2,2,1)).draw_molecule_group(soup, "Total remaning soup")
-    LissajousMotoru(fig.add_subplot(2,2,2)).draw_molecule_group(iptal, "CANCELED", color='lightgray')
-    LissajousMotoru(fig.add_subplot(2,2,3)).draw_molecule_group(sonuc, "Final result: P", color='green')
+    LissajousEngine(fig.add_subplot(2,2,1)).draw_molecule_group(soup, "Total remaning soup")
+    LissajousEngine(fig.add_subplot(2,2,2)).draw_molecule_group(iptal, "CANCELED", color='lightgray')
+    LissajousEngine(fig.add_subplot(2,2,3)).draw_molecule_group(sonuc, "Final result: P", color='green')
     plt.show()
 
 def visualize_Q():
@@ -163,10 +163,10 @@ def visualize_Q():
     m3=collision(M3_A,M3_B); m5=collision(M5_A,M5_B); soup=m3+m5
     sonuc, iptal = cancel(soup)
     fig=plt.figure(figsize=(12,12)); fig.suptitle("Analysis scene: Q = M3+M5", fontsize=20)
-    LissajousMotoru(fig.add_subplot(2,2,1)).draw_molecule_group(m3, "Remainings From M3")
-    LissajousMotoru(fig.add_subplot(2,2,2)).draw_molecule_group(m5, "Remainings From M5")
-    LissajousMotoru(fig.add_subplot(2,2,3)).draw_molecule_group(iptal, "CANCELED", color='lightgray')
-    LissajousMotoru(fig.add_subplot(2,2,4)).draw_molecule_group(sonuc, "Final result: Q", color='green')
+    LissajousEngine(fig.add_subplot(2,2,1)).draw_molecule_group(m3, "Remainings From M3")
+    LissajousEngine(fig.add_subplot(2,2,2)).draw_molecule_group(m5, "Remainings From M5")
+    LissajousEngine(fig.add_subplot(2,2,3)).draw_molecule_group(iptal, "CANCELED", color='lightgray')
+    LissajousEngine(fig.add_subplot(2,2,4)).draw_molecule_group(sonuc, "Final result: Q", color='green')
     plt.show()
 
 def visualize_R():
@@ -176,9 +176,9 @@ def visualize_R():
     m2=collision(M2_A,M2_B); m4=collision(M4_A,M4_B); soup=m2+m4
     sonuc, iptal = cancel(soup)
     fig=plt.figure(figsize=(12,12)); fig.suptitle("Analysis scene: R = M2+M4", fontsize=20)
-    LissajousMotoru(fig.add_subplot(2,2,1)).draw_molecule_group(soup, "Total remaning soup")
-    LissajousMotoru(fig.add_subplot(2,2,2)).draw_molecule_group(iptal, "CANCELED", color='lightgray')
-    LissajousMotoru(fig.add_subplot(2,2,3)).draw_molecule_group(sonuc, "Final result: R", color='green')
+    LissajousEngine(fig.add_subplot(2,2,1)).draw_molecule_group(soup, "Total remaning soup")
+    LissajousEngine(fig.add_subplot(2,2,2)).draw_molecule_group(iptal, "CANCELED", color='lightgray')
+    LissajousEngine(fig.add_subplot(2,2,3)).draw_molecule_group(sonuc, "Final result: R", color='green')
     plt.show()
 
 def visualize_S():
@@ -191,9 +191,9 @@ def visualize_S():
     soup = m1 + flip_signs(m2) + m3 + m6
     sonuc, iptal = cancel(soup)
     fig=plt.figure(figsize=(20,15)); fig.suptitle("Analysis scene: S = M1-M2+M3+M6", fontsize=20)
-    LissajousMotoru(fig.add_subplot(2,2,1)).draw_molecule_group(soup, "Total remaning soup")
-    LissajousMotoru(fig.add_subplot(2,2,2)).draw_molecule_group(iptal, "CANCELED", color='lightgray')
-    LissajousMotoru(fig.add_subplot(2,2,3)).draw_molecule_group(sonuc, "Final result: S", color='green')
+    LissajousEngine(fig.add_subplot(2,2,1)).draw_molecule_group(soup, "Total remaning soup")
+    LissajousEngine(fig.add_subplot(2,2,2)).draw_molecule_group(iptal, "CANCELED", color='lightgray')
+    LissajousEngine(fig.add_subplot(2,2,3)).draw_molecule_group(sonuc, "Final result: S", color='green')
     plt.show()
 
 if __name__ == "__main__":
