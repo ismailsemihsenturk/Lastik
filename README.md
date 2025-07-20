@@ -175,4 +175,4 @@ Bu, bir son değil, bir başlangıçtır. Önümüzdeki görevler şunlardır:
 1.  **Örüntü Arama:** Üretilen P, Q, R, S sahnelerini dikkatle inceleyerek, Strassen'in algoritmasındaki gizli simetrileri ve desenleri aramak.
 2.  **Optimizasyon:** Bu desenlerden yola çıkarak, "Bu savaşı daha az kayıpla (daha az çarpımla) kazanmanın bir yolu var mı?" sorusuna cevap aramak. 7 M terimi yerine, belki de 6 ara ürünle aynı sonucu veren yeni bir "Çarpışma Fiziği" tasarlamak.
 3.  **Genişleme:** Bu motoru ve felsefeyi, 3x3 ve nxn matrislere uygulayacak şekilde genelleştirmek.
-````
+
