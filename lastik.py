@@ -143,9 +143,9 @@ def visualize_P():
     # P = M1 + M4 - M5 + M7
     # Define inputs
     M1_A = [Atom('single_1','a','+'), Atom('single_1','d','+')]; M1_B = [Atom('single_1','e','+'), Atom('single_1','h','+')]
-    M4_A = [Atom('single_1','d','+')]; M4_B = [Atom('single_5','g','+'), Atom('single_1','e','-')]
+    M4_A = [Atom('single_1','d','+')]; M4_B = [Atom('single_3','g','+'), Atom('single_1','e','-')]
     M5_A = [Atom('single_1','a','+'), Atom('single_2','b','+')]; M5_B = [Atom('single_1','h','+')]
-    M7_A = [Atom('single_2','b','+'), Atom('single_1','d','-')]; M7_B = [Atom('single_5','g','+'), Atom('single_1','h','+')]
+    M7_A = [Atom('single_2','b','+'), Atom('single_1','d','-')]; M7_B = [Atom('single_3','g','+'), Atom('single_1','h','+')]
     # Compute
     m1=collision(M1_A,M1_B); m4=collision(M4_A,M4_B); m5=collision(M5_A,M5_B); m7=collision(M7_A,M7_B)
     soup = m1 + m4 + flip_signs(m5) + m7
@@ -158,7 +158,7 @@ def visualize_P():
     plt.show()
 
 def visualize_Q():
-    M3_A=[Atom('single_1','a','+')]; M3_B=[Atom('single_4','f','+'), Atom('single_1','h','-')]
+    M3_A=[Atom('single_1','a','+')]; M3_B=[Atom('single_2','f','+'), Atom('single_1','h','-')]
     M5_A=[Atom('single_1','a','+'), Atom('single_2','b','+')]; M5_B=[Atom('single_1','h','+')]
     m3=collision(M3_A,M3_B); m5=collision(M5_A,M5_B); soup=m3+m5
     sonuc, iptal = cancel(soup)
@@ -172,7 +172,7 @@ def visualize_Q():
 def visualize_R():
     # R = M2 + M4
     M2_A = [Atom('single_3','c','+'), Atom('single_1','d','+')]; M2_B = [Atom('single_1','e','+')]
-    M4_A = [Atom('single_1','d','+')]; M4_B = [Atom('single_5','g','+'), Atom('single_1','e','-')]
+    M4_A = [Atom('single_1','d','+')]; M4_B = [Atom('single_3','g','+'), Atom('single_1','e','-')]
     m2=collision(M2_A,M2_B); m4=collision(M4_A,M4_B); soup=m2+m4
     sonuc, iptal = cancel(soup)
     fig=plt.figure(figsize=(12,12)); fig.suptitle("Analysis scene: R = M2+M4", fontsize=20)
@@ -185,8 +185,8 @@ def visualize_S():
     # S = M1 - M2 + M3 + M6
     M1_A = [Atom('single_1','a','+'), Atom('single_1','d','+')]; M1_B = [Atom('single_1','e','+'), Atom('single_1','h','+')]
     M2_A = [Atom('single_3','c','+'), Atom('single_1','d','+')]; M2_B = [Atom('single_1','e','+')]
-    M3_A = [Atom('single_1','a','+')]; M3_B = [Atom('single_4','f','+'), Atom('single_1','h','-')]
-    M6_A = [Atom('single_3','c','+'), Atom('single_1','a','-')]; M6_B = [Atom('single_1','e','+'), Atom('single_4','f','+')]
+    M3_A = [Atom('single_1','a','+')]; M3_B = [Atom('single_2','f','+'), Atom('single_1','h','-')]
+    M6_A = [Atom('single_3','c','+'), Atom('single_1','a','-')]; M6_B = [Atom('single_1','e','+'), Atom('single_2','f','+')]
     m1=collision(M1_A,M1_B); m2=collision(M2_A,M2_B); m3=collision(M3_A,M3_B); m6=collision(M6_A,M6_B)
     soup = m1 + flip_signs(m2) + m3 + m6
     sonuc, iptal = cancel(soup)
