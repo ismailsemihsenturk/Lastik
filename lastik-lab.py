@@ -38,8 +38,8 @@ SHAPE_DATABASE = {
     
     # --- Triple combination ---
     'triple_1': {'a': 2, 'b': 1, 'fase_pi': 1.0}, # Nuancer bow tie
-    'triple_2': {'a': 3.33, 'b': 1, 'fase_pi': 1.0, 't_range_pi': (0.2, 1.8)}, # Mysterious shape 1
-    'triple_3': {'a': 3.33, 'b': 1, 'fase_pi': 0, 't_range_pi': (0.2, 1.8)}, # Mysterious shape 2 (symmetry of Mysterious shape 1 )
+    'triple_2': {'a': 3, 'b': 1, 'fase_pi': 1.5, 't_range_pi': (0.17, 1.83)}, # Mysterious shape 2 (symmetry of Mysterious shape 1 )
+    'triple_3': {'a': 3, 'b': 1, 'fase_pi': 0.5, 't_range_pi': (0.17, 1.83)}, # Mysterious shape 2 (symmetry of Mysterious shape 1 )
     'triple_4': {'a': 2, 'b': 1, 'fase_pi': 1.0}, # Nuancer bow tie
 
     # --- LASTİK ---
